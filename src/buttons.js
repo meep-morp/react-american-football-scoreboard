@@ -1,5 +1,5 @@
 import React from "react";
-import {seconds, minutes, setReset} from "./App";
+import {seconds, minutes, setReset, homeTeamName, awayTeamName} from "./App";
 import {homeScore, setHomeScore} from "./home";
 import {setAwayScore, awayScore} from "./away"
 import {quarter, setQuarter} from "./BottomRow";
@@ -38,13 +38,13 @@ const Buttons = () => {
     return (
         <section className="buttons">
             <div className="homeButtons">
-                <button className="homeButtons__touchdown" onClick={touchdownHome}>Home Touchdown</button>
-                <button className="homeButtons__fieldGoal" onClick={fieldGoalHome}>Home Field Goal</button>
+                <button className="homeButtons__touchdown" onClick={touchdownHome}>{homeTeamName} Touchdown</button>
+                <button className="homeButtons__fieldGoal" onClick={fieldGoalHome}>{homeTeamName} Field Goal</button>
             </div>
             <button onClick={quarterUp}>Quarter</button>
             <div className="awayButtons">
-                <button className="awayButtons__touchdown" onClick={touchdownAway}>Away Touchdown</button>
-                <button className="awayButtons__fieldGoal" onClick={fieldGoalAway}>Away Field Goal</button>
+                <button className="awayButtons__touchdown" onClick={touchdownAway}>{awayTeamName} Touchdown</button>
+                <button className="awayButtons__fieldGoal" onClick={fieldGoalAway}>{awayTeamName} Field Goal</button>
             </div>
         </section>
     )
