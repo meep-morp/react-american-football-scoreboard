@@ -106,7 +106,7 @@
 }
 
 .buttons {
-  width: 50%;
+  width: 60%;
   margin: 0 auto;
   display: flex;
   justify-content: space-around;
@@ -118,4 +118,20 @@
 .awayButtons__fieldGoal {
   margin: 1rem;
   border-radius: 4px;
+}
+
+.quarterScores {
+  margin-top: 50px;
+  border-radius: 10px;
+  padding: 10px;
+  border: white 2px solid;
+  background-color: #1b4715;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 3rem;
+  width: 80%;
 }
